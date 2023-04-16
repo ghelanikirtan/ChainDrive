@@ -43,7 +43,6 @@ const Display = ({ contract, account }) => {
   };
   return (
     <div className="display-parent">
-      <div className="image-list">{data}</div>
       <input
         type="text"
         placeholder="Enter Address"
@@ -52,6 +51,7 @@ const Display = ({ contract, account }) => {
       <button className="center button" onClick={getdata}>
         Get Data
       </button>
+      <div className="image-list">{data}</div>
     </div>
   );
 };

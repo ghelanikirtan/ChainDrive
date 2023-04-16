@@ -81,6 +81,10 @@
   text-align: center;
 }
 
+input[type="text"] {
+  z-index: 100;
+}
+
 input[type="text"]:focus {
   background-color: lightblue;
 }
