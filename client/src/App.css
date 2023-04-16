@@ -1,3 +1,21 @@
+.parent {
+  /* background-color: #61dafb; */
+  /* height: 94vh; */
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
+  /* position: fixed; */
+  border-radius: 15px;
+  /* background-image: url("https://images.unsplash.com/photo-1639815188546-c43c240ff4df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
+  background-size: cover; */
+  /* background-position: top; */
+}
+
 .App {
   text-align: center;
   margin-top: 10vh;
@@ -51,8 +69,8 @@ body {
 .bg {
   /* animation: slide 3s ease-in-out infinite alternate; */
   /* background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%); */
-  background-color: #282c34;
   bottom: 0;
+  backdrop-filter: blur(5px);
   left: -50%;
   opacity: 0.5;
   position: fixed;
@@ -140,12 +158,12 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .share {
-  padding: 16px;
+  /* padding: 16px; */
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 30px;
   vertical-align: center;
   background: #a211e0;
   /* width: 100px; */
@@ -155,7 +173,7 @@ p {
   cursor: pointer;
   border-radius: 30px;
   padding: 15px 50px;
-  font-size: 13px;
+  font-size: 18px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* z-index: -1; */
 }
