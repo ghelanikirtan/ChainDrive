@@ -12,17 +12,19 @@ const FileUpload = ({ contract, account, provider }) => {
         formData.append("file", file);
 
         const resFile = await axios({
-          method: 'post',
-          url: 'https://api.pinata.cloud/pinning/pinFileToIPFS',
+          method: "post",
+          url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
           data: formData,
           headers: {
-            pinata_api_key: `807ace6c55c98ed96625`,
-            pinata_secret_api_key: `bf59abac73d6712c78fa8ed060a2e92e92429ba24aa428d9b88941d292aa8e07`,
-            'Content-Type': 'multipart/form-data',
+            // pinata_api_key: `807ace6c55c98ed96625`,
+            pinata_api_key: `PINATA_API_KEY`,
+            pinata_secret_api_key: `PINATA_SECRET_API_KEY`,
+            // pinata_secret_api_key: `bf59abac73d6712c78fa8ed060a2e92e92429ba24aa428d9b88941d292aa8e07`,
+            "Content-Type": "multipart/form-data",
           },
         });
         const ImgHash = `https://gateway.pinata.cloud/ipfs/${resFile.data.IpfsHash}`;
-        contract.add(account,ImgHash);
+        contract.add(account, ImgHash);
         alert("Successfully Image Uploaded");
         setFileName("No image selected");
         setFile(null);
